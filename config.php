@@ -1,10 +1,10 @@
 <?php
 // Configurazione del database
 
-$db_host = $_ENV['DB_HOST'];
-$db_name = $_ENV['DB_NAME'];
-$db_user = $_ENV['DB_USER'];
-$db_pass = $_ENV['DB_PASS'];
+$db_host = $_ENV['db_host'];
+$db_name = $_ENV['db_name'];
+$db_user = $_ENV['db_user'];
+$db_pass = $_ENV['db_pass'];
 
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
