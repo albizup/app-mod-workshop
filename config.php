@@ -1,9 +1,10 @@
 <?php
 // Configurazione del database
-$db_host = '34.154.153.128';
-$db_name = 'image_catalog';
-$db_user = 'appmod-phpapp-user';
-$db_pass = 'Nestam13.';
+
+$db_host = $_ENV['DB_HOST'];
+$db_name = $_ENV['DB_NAME'];
+$db_user = $_ENV['DB_USER'];
+$db_pass = $_ENV['DB_PASS'];
 
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
